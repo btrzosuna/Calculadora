@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora con Bootstrap</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <main class="container">
+        <table class="table-primary">
+            <span id="contadorResultado">Resultado:</span><br>
+            <input type="text" id="result">
+            <tr class="table-primary">
+                <td class="table-primary"><button class="btn btn-primary" type="button" onclick="agregarValor('9')">9</button></td>
+                <td class="table-primary"><button class="btn btn-primary" type="button" onclick="agregarValor('8')">8</button></td>
+                <td class="table-primary"><button class="btn btn-primary" type="button" onclick="agregarValor('7')">7</button></td>
+                <td class="table-primary"><button class="btn btn-primary" type="button" onclick="operar('/')">/</button></td>
+            </tr>
+            <tr class="table-primary">
+                <td class="table-primary"><button class="btn btn-primary" type="button" onclick="agregarValor('6')">6</button></td>
+                <td class="table-primary"><button class="btn btn-primary" type="button" onclick="agregarValor('5')">5</button></td>
+                <td class="table-primary"><button class="btn btn-primary" type="button" onclick="agregarValor('4')">4</button></td>
+                <td class="table-primary"><button class="btn btn-primary" type="button" onclick="operar('*')">x</button></td>
+            </tr>
+            <tr class="table-primary">
+                <td class="table-primary"><button class="btn btn-primary" type="button" onclick="agregarValor('3')">3</button></td>
+                <td class="table-primary"><button class="btn btn-primary" type="button" onclick="agregarValor('2')">2</button></td>
+                <td class="table-primary"><button class="btn btn-primary" type="button" onclick="agregarValor('1')">1</button></td>
+                <td class="table-primary"><button class="btn btn-primary" type="button" onclick="operar('+')">+</button></td>
+            </tr>
+            <tr class="table-primary">
+                <td class="table-primary"><button class="btn btn-primary" type="button" onclick="agregarValor('0')">0</button></td>
+                <td class="table-primary"><button class="btn btn-primary" type="button" onclick="operar('-')">-</button></td>
+                <td class="table-primary"><button class="btn btn-primary" type="button" onclick="calcularResultado()">=</button></td>
+                <td class="table-primary"><button class="btn btn-primary" type="button" onclick="borrar()">Borrar</button></td>
+            </tr>
+        </table>
+    </main>
+    <script src="./js/main.js" defer></script>
+</body>
+</html>
